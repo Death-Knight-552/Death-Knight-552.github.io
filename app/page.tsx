@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import img001 from 'files/001/108-bigger.png'
 
 
 const books = [
@@ -15,10 +16,9 @@ const books = [
         home: "https://ameryedge.com/",
       },
     ],
-    coverImagePath:
-      "https://cdn.novelupdates.com/images/2016/03/108-bigger.png",
+    coverImagePath: img001,
     filePath:
-      "/files/108 Maidens of Destiny - 她酷像冰 (She’s Cold As Ice).epub",
+      "/files/001/108 Maidens of Destiny - 她酷像冰 (She’s Cold As Ice).epub",
     plot: `“Your servant is Majestic Star ‘Panther Head’ Lin Chong, from this day forward I am your woman!”\n
 When the beautiful and heroic young girl in front of him shouted those heaven shattering words, Su Xing was overwhelmed with shock.\n
 And so the tale of the 108 maidens of destiny from legends begins.\n
@@ -43,11 +43,9 @@ export default function Home() {
               <div className="mt-4 w-full">
                 <Image
                   unoptimized
-                  width={192}
-                  height={256}
                   src={book.coverImagePath}
                   alt={book.name}
-                  className="w-48 h-64 object-cover mx-auto rounded-lg"
+                  className="mx-auto rounded-lg "
                 />
               </div>
               <p className="mt-4 whitespace-pre-line text-justify">
